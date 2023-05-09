@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.github.manoelcampos</groupId>
-	<artifactId>loja-virtual</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>loja-virtual</name>
-	<description>Demo project for Spring Boot</description>
+	<artifactId>loja-virtual-springboot-rest</artifactId>
+	<version>1.0.0</version>
+	<name>loja-virtual-springboot-rest</name>
+	<description>Projeto de exemplo de API REST com SpringBoot para uma Loja Virtual</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
