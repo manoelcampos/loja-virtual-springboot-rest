@@ -11,6 +11,7 @@
             </DockerPortBindingImpl>
           </list>
         </option>
+        <option name="commandLineOptions" value="--env-file .env" />
         <option name="sourceFilePath" value="Dockerfile" />
       </settings>
     </deployment>

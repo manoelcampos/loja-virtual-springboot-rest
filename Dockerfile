@@ -4,7 +4,6 @@ FROM amazoncorretto:17.0.7-alpine
 RUN mkdir /app
 
 COPY ./target/loja-virtual-springboot-rest-*.jar /app/app.jar
-COPY .env /app/.env
 WORKDIR /app
 
 EXPOSE 8080
