@@ -2,7 +2,6 @@
 
 ## Configurar Ambiente de Desenvolvimento
 
-
 ### JDK
 
 Requer o JDK 17 que pode ser instalado no ubuntu com:
@@ -26,6 +25,11 @@ Assim, tal opção precisa ser habilitada.
 ### Configurações do Projeto
 
 O arquivo [application.properties](src/main/resources/application.properties) contém as configurações do projeto.
+Algumas configurações são definidas por meio de variáveis de ambiente.
+
+O projeto usa a biblioteca [spring-dotenv](https://github.com/paulschwarz/spring-dotenv) para ler arquivos .env automaticamente.
+Assim, você deve copiar o arquivo [.env.example](.env.example) como `.env` e alterar as configurações que desejar
+(veja comentários dentro do arquivo).
 
 # Executando o projeto em ambiente dev
 
