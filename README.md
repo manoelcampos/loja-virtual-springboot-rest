@@ -33,4 +33,7 @@ Assim, você deve copiar o arquivo [.env.example](.env.example) como `.env` e al
 
 # Executando o projeto em ambiente dev
 
-Você pode executar a classe CompeteAquiApplication no seu IDE ou digitar `mvn spring-boot:run` em um terminal.
+Você pode executar a classe `LojaVirtualApplication` no seu IDE ou digitar um dos seguintes comandos no terminal:
+
+- `mvn spring-boot:run`
+- `java -jar target/loja-virtual-springboot-rest-*.jar`
