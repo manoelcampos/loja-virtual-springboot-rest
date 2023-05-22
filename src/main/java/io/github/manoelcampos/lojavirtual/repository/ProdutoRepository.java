@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ProdutoRepository extends JpaRepository<Produto, Long> {
+public interface ProdutoRepository extends ProdutoRepositoryCustom, JpaRepository<Produto, Long> {
     List<Produto> findAllByModeloId(long id);
 
     @Query("select p from Produto p where p.estoque > 0")

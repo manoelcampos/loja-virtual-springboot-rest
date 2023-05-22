@@ -1,5 +1,6 @@
 package io.github.manoelcampos.lojavirtual.rest;
 
+import io.github.manoelcampos.lojavirtual.model.Modelo;
 import io.github.manoelcampos.lojavirtual.model.Produto;
 import io.github.manoelcampos.lojavirtual.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.Map;
 
 @RequestMapping("/produto")
 @RestController
@@ -19,6 +21,11 @@ public class ProdutoController {
     public Long insert(@RequestBody Produto produto){
         repository.save(produto);
         return produto.getId();
+    }
+
+    @GetMapping("/byModelo")
+    public Map<Modelo, Long> countProdutosByModelo() {
+        return repository.countProdutosByModelo();
     }
 
     @PutMapping
