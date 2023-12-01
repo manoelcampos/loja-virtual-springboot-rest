@@ -1,4 +1,4 @@
-package io.github.manoelcampos.lojavirtual.rest;
+package io.github.manoelcampos.lojavirtual.controller;
 
 import io.github.manoelcampos.lojavirtual.model.Modelo;
 import io.github.manoelcampos.lojavirtual.model.Produto;
