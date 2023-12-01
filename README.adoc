@@ -41,7 +41,7 @@ Tais métodos CRUD devem ser associados a determinados verbos HTTP. A tabela aba
 |DELETE                |**D**elete      | delete       | 204 (No Content)
 |===
 
-NOTE: * 204 (No Content): quando nenhum dado for retornado pelo endpoint
+NOTE: Retorne 204 (No Content) quando nenhum dado for retornado pelo endpoint e 404 quando um recurso não for localizado (para métodos de busca como `findById`).
 
 === IDE
 
