@@ -1,3 +1,17 @@
+:icons: font
+:numbered:
+:title: AsciiDoctor GitHub Pages Action
+ifdef::env-github[:outfilesuffix: .adoc]
+
+ifdef::env-github,env-browser[]
+// Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
 = Projeto de exemplo de API REST com SpringBoot para uma Loja Virtual image:https://github.com/manoelcampos/loja-virtual-springboot-rest/actions/workflows/build.yml/badge.svg[maven,link=https://github.com/manoelcampos/loja-virtual-springboot-rest/actions/workflows/build.yml]
 
 == Configurar Ambiente de Desenvolvimento
