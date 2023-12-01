@@ -21,8 +21,8 @@ public class ProdutoRepositoryCustomImpl implements ProdutoRepositoryCustom {
         return em.createQuery(jpql, Tuple.class)
                  .getResultStream()
                  .collect(
-                         toMap(t -> t.get("modelo", Modelo.class),
-                         t -> t.get("total", Long.class))
+                     toMap(t -> t.get("modelo", Modelo.class),
+                     t -> t.get("total", Long.class))
                  );
     }
 }
